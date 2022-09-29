@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title> </title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="topnav">
+      <a href="main.html">Introduction</a>
+      <a href="implementation.html">Implementation</a>
+      <a class="active" href="flow.html">Flow of the Application</a>
+      <a href="detection.html">How Object Detection works</a>
+      <a href="challenges.html">Challenges</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="conclusion.html">Conclusion</a>
+      <a href="reference.html">Reference</a>
+    </div>
+    <div id="main_body">
+      <h2 id="heading">Flow of the Project</h2>
+      The Raspberry Pi system uses the ultrasonic sensors to detect the object,
+      in our case/ problem, it would detect the public transport vehicle like
+      bus or train and let user know the distance. The distance is calculated by
+      the time difference between sensor transmits and receives the ultrasonic
+      waves. These ultrasonic waves travel at speed of sound, approx. 343
+      m/s.<br /><br />
+
+      <img
+        src="flow.png"
+        alt="Public Transport"
+        style="height: 40%; width: 100%; object-fit: contain"
+      />
+
+      The Raspberry Pi camera module takes the picture of the public transport
+      vehicle within approximate range and passes that still image to object
+      detection and object recognition module. The module here would be
+      responsible for text extraction and saving it to the text file. The OCR
+      (Optical Character Recognition) feature by Google Cloud Vision API is one
+      of the most efficient RESTful API for the application. <br /><br />Once
+      the image is clicked, it can be stored in the local memory for specific
+      time period and the name of the image is passed on the feature extraction
+      and recognition. The text extracted from the image is then stored in the
+      log file and the output is directed to the user via speaker/ headphones.
+      All the modules mentioned in the above implementation work separately as
+      they can be called as threads.
+    </div>
+  </body>
+</html>

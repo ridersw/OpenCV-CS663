@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <title> </title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="topnav">
+      <a href="main.html">Introduction</a>
+      <a href="implementation.html">Implementation</a>
+      <a href="flow.html">Flow of the Application</a>
+      <a class="active" href="detection.html">How Object Detection works</a>
+      <a href="challenges.html">Challenges</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="conclusion.html">Conclusion</a>
+      <a href="reference.html">Reference</a>
+    </div>
+    <div id="main_body">
+      <h2 id="heading">How detection works?</h2>
+      Object detection is the technique in Computer vision that is used to
+      identify the required object and locate them in the provided image or the
+      video. The object detection module will usually draw a square box around
+      the object after locating in the image [3]. <br /><br />
+      <img
+        src="dog.png"
+        alt="Public Transport"
+        style="height: 60%; width: 100%; object-fit: contain"
+      />
+      <br /><br />
+      Before we proceed, I would like to clarify the difference between Object
+      detection and Object recognition. The Object recognition will assign the
+      label to the object while object detection will return True if object is
+      detected in the image. There are two main object detection modes- Machine
+      Learning based approaches and Deep-Learning based approaches.
+      <br /><br />In the Machine Learning based approaches, computer vision uses
+      the methods like color histogram or edges and other various features of
+      the image to identify the pixel clusters that belong to the objects. The
+      deep learning-based approaches usually use the convolutional neural
+      networks to perform the end-to-end unsupervised object detection in which
+      the features are defined and extracted altogether. <br /><br />The deep
+      learning-based approach is used in most of the applications due to its
+      flexibility and usability. Basic Structure of the Object Detection- The
+      deep learning approach has 2 main parts, Encoder and Decoder. The encoder
+      takes an image as inputs, passes through the CNN layers that learn to
+      extract features. The output from the encoder is then passed to the
+      decoder that predicts the bounding boxes and labels the detected
+      object.<br /><br />
+
+      <iframe
+        width="950"
+        height="534"
+        src="https://www.youtube.com/embed/z9mvfjwSE38"
+        title="L23/1 Encoder-Decoder"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        style="height: 100%; width: 100%; object-fit: contain"
+      ></iframe>
+    </div>
+  </body>
+</html>
